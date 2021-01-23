@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="h-100">
+  <head>
+    <title>ClipboardJS Issue #695</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Demo of Sentry keypress issue" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="h-100">
+    <div class="container container-fluid h-100 d-flex flex-column">
+      <div class="row">
+        <div class="col-sm">
+          <h1 class="mb-4">Clipboard.js Issue #695</h1>
+          <h2>Issue Description:</h2>
+          <p>
+            Trigger loses focus after copy event. In both examples below, the
+            "Copy Text" button is wired up to copy the text inside the demo box.
+            Additionally, each has defined a <code>success</code> event handler
+            that calls <code>clearSelection()</code>.
+          </p>
+        </div>
+      </div>
+      <div class="row" style="flex: 1">
+        <div class="col-sm">
+          <iframe class="w-100 h-100" src="./204.html" frameborder="0"></iframe>
+        </div>
+        <div class="col-sm">
+          <iframe class="w-100 h-100" src="./205.html" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
